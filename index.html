@@ -1,37 +1,24 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    Proyecto: Gestor de Productos
-
-Objetivo:
-Crear una aplicación web sencilla para gestionar productos utilizando las tecnologías HTML, CSS y JavaScript. La aplicación debe permitir realizar operaciones básicas de un CRUD (Crear, Leer, Actualizar, Eliminar) sobre una lista de productos.
-
-Requisitos técnicos:
-
-Interfaz de Usuario:
-
-Crear una página HTML con una interfaz sencilla que incluya secciones para mostrar la lista de productos y un formulario para agregar nuevos productos.
-Estilizar la interfaz con CSS para que sea agradable y fácil de usar.
-Lista de Productos:
-
-Mostrar una lista de productos en la página.
-Cada producto debe tener al menos los siguientes campos: nombre, descripción y precio.
-Mostrar los productos de manera clara y organizada.
-Operaciones CRUD:
-
-Crear: Incluir un formulario en la interfaz que permita agregar nuevos productos a la lista. Al enviar el formulario, el nuevo producto debe ser añadido a la lista.
-Leer: Mostrar la lista de productos existentes.
-Actualizar: Permitir la edición de productos existentes. Al hacer clic en un producto, debe ser posible modificar sus detalles.
-Eliminar: Incluir la opción de eliminar un producto de la lista.
-Almacenamiento Local:
-
-Utilizar el almacenamiento local del navegador (localStorage) para persistir los datos de la lista de productos. Esto permitirá que los datos permanezcan incluso después de recargar la página.
-
-branch para creacion feat/create , feat/read , feat/update , feat/delete, fix/update
+  <h1>Agregar nuevo producto</h1>
+  <form>
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+    </div>
+    <div class="form-group">
+      <label for="descripcion">Descripción:</label>
+      <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="precio">Precio:</label>
+      <input type="number" id="precio" name="precio" step=".01" required>
+    </div>
+    <input type="submit" value="Agregar producto">
+  </form>
 </body>
 </html>
